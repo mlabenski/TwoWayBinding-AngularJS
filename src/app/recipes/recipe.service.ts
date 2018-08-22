@@ -5,14 +5,13 @@ import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
 @Injectable()
 export class RecipeService {
-    recipeSelected = new EventEmitter<Recipe>();
     private recipes: Recipe[] = [
-        new Recipe('A Test Recipe', 'This is simply a test', 'http://worldfood.guide/media/dishes/taco_al_pastor_1566.jpg',
+        new Recipe('Buffalo Taco', 'Spicier than Mexico', 'http://worldfood.guide/media/dishes/taco_al_pastor_1566.jpg',
     [
         new Ingredient('Cauliflower', 9),
         new Ingredient('Avocado', 2)
     ]),
-        new Recipe('Another Test Recipe', 'This is simply a test',
+        new Recipe('Hamburgesa', 'A Mexicano Hamburger',
         'https://simply-delicious-food.com/wp-content/uploads/2016/08/Hash-brown-cheeseburgers-4.jpg',
          [
              new Ingredient('Buns', 1),
